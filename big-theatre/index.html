@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" type="image/png" href="img/icon.png" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700&display=swap"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <title>Big Theatre</title>
+  </head>
+  <body class="bg-transparent">
+    <!-- Main section -->
+    <div
+      class="mainSection position-relative container-fluid p-0 m-0"
+      id="main-section"
+    >
+      <header>
+        <nav class="navbar navbar-expand-md p-0 mb-0 mx-0">
+          <div class="container-fluid position-relative z-2 m-0">
+            <div
+              class="nav-container container-fluid d-flex flex-wrap justify-content-md-around justify-content-between mx-auto"
+            >
+              <button
+                class="d-block d-md-none bg-transparent border-0"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasLeft"
+                aria-controls="offcanvasLeft"
+              >
+                <span><img src="img/nav-btn.png" /></span>
+              </button>
+              <div
+                class="offcanvas offcanvas-start d-md-none d-block"
+                tabindex="-1"
+                id="offcanvasLeft"
+                aria-labelledby="offcanvasLeftLabel"
+              >
+                <div class="offcanvas-header justify-content-end">
+                  <button
+                    type="button"
+                    class="btn-close btn-close-white"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="offcanvas-body p-0">
+                  <ul class="p-0 navs-offcanvas">
+                    <li>
+                      <a class="nav-offcanvas-link" href="#main-section"
+                        >Головна</a
+                      >
+                    </li>
+                    <li>
+                      <a class="nav-offcanvas-link" href="#about-section"
+                        >Про театр</a
+                      >
+                    </li>
+                    <li>
+                      <a class="nav-offcanvas-link" href="#projects-section"
+                        >Наші постановки</a
+                      >
+                    </li>
+                    <li>
+                      <a class="nav-offcanvas-link" href="#partners-section"
+                        >Партнери театру</a
+                      >
+                    </li>
+                    <li>
+                      <a class="nav-offcanvas-link" href="#contacts-section"
+                        >Контакти</a
+                      >
+                    </li>
+                  </ul>
+                  <div class="row p-0 mt-0 mx-auto align-items-center">
+                    <div class="col p-0 h-100">
+                      <a><img src="img/facebook-offcanvas.svg" /></a>
+                    </div>
+                    <div class="col p-0 h-100">
+                      <a><img src="img/instagram-offcanvas.svg" /></a>
+                    </div>
+                  </div>
+                  <div class="row p-0 my-0 mx-auto">
+                    <div class="col p-0 h-100">
+                      <a><img src="img/youtube-offcanvas.svg" /></a>
+                    </div>
+                    <div class="col p-0 h-100">
+                      <a><img src="img/vk-offcanvas.svg" /></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="d-none d-md-block p-0">
+                <div class="navbar-nav p-0">
+                  <a
+                    class="nav-link p-0"
+                    aria-current="page"
+                    href="#main-section"
+                    >Головна</a
+                  >
+                  <a class="nav-link p-0" href="#about-section">Про театр</a>
+                  <a class="nav-link p-0" href="#projects-section"
+                    >Наші постановки</a
+                  >
+                  <a class="nav-link p-0" href="#partners-section"
+                    >Партнери театру</a
+                  >
+                  <a class="nav-link p-0" href="#contacts-section">Контакти</a>
+                </div>
+              </div>
+              <p id="copyNumber" class="me-0 my-0">+38 (095) 650-71-79</p>
+              <div class="toast-container position-fixed top-0 p-3">
+                <div
+                  id="copyNumberToast"
+                  class="toast"
+                  role="alert"
+                  aria-live="assertive"
+                  aria-atomic="true"
+                >
+                  <div class="toast-header">
+                    <strong class="me-auto">Copied to the clipboard</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div
+        class="contacts-header px-0 m-0 text-center position-fixed z-1 top-0 d-none d-md-flex flex-column justify-content-end"
+      >
+        <p class="p-0 mx-auto my-0">Контактна інформація</p>
+        <div class="mx-auto p-0"></div>
+        <ul class="p-0 m-0">
+          <li>
+            <a><i class="bi bi-instagram"></i></a>
+          </li>
+          <li>
+            <a><img src="img/facebook.svg" /></a>
+          </li>
+          <li>
+            <a><img src="img/vk.svg" /></a>
+          </li>
+          <li>
+            <a><i class="bi bi-youtube"></i></a>
+          </li>
+        </ul>
+      </div>
+      <!-- .contacts-header -->
+      <div
+        class="mainSection-container mx-auto row p-0 justify-content-between align-items-end"
+      >
+        <div class="maintext-container col-12 col-lg-7">
+          <h1 class="p-0 text-md-start text-center">Театр ім. Лесі Українки</h1>
+          <p class="p-0">
+            У самому центрі історичної частини Києва, за два кроки від
+            Хрещатика, неподалік від Золотих воріт, на розі двох старовинних
+            вулиць - Пушкінської та Богдана Хмельницького – постає будівля,
+            добре відома киянам та гостям столиці України як Театр імені Лесі
+            Українки.<br /><br />
+            Цінність будь-якого театру, його популярність у глядача завжди
+            визначається наявністю в ньому яскравих індивідуальностей.<br /><br />Київський
+            театр імені Лесі Українки завжди славився своїми акторськими та
+            режисерськими індивідуальностями. Театр завжди був і залишається
+            театром ансамблю.
+          </p>
+          <button class="text-center border-0">Афіша</button>
+        </div>
+        <!-- .maintext-container -->
+        <div class="swiper mySwiper col-2 d-none d-lg-block">
+          <div class="swiper-wrapper position-relative">
+            <div class="swiper-slide">
+              <img src="img/poster1.png" class="img-fluid" />
+              <div class="position-absolute top-0 start-0 w-100 h-100"></div>
+            </div>
+            <!-- .swiper-slide -->
+            <div class="swiper-slide">
+              <img src="img/poster2.jpg" class="img-fluid" />
+              <div class="position-absolute top-0 start-0 w-100 h-100"></div>
+            </div>
+            <!-- .swiper-slide -->
+            <div class="swiper-slide">
+              <img src="img/poster3.jpg" class="img-fluid" />
+              <div class="position-absolute top-0 start-0 w-100 h-100"></div>
+            </div>
+          </div>
+          <!-- .swiper-slide -->
+          <div class="row w-100 justify-content-between">
+            <div class="swiper-btn-prev col-2">
+              <i class="bi bi-arrow-left"> </i>
+              Попередня
+            </div>
+            <div class="swiper-btn-next col-2">
+              Наступна <i class="bi bi-arrow-right"></i>
+            </div>
+          </div>
+        </div>
+        <!-- .swiper -->
+      </div>
+      <!-- .mainSection-container -->
+    </div>
+    <!-- .mainSection -->
+    <!-- About theatre -->
+    <div
+      class="aboutSection container-fluid p-0 text-center"
+      id="about-section"
+    >
+      <h2><span>Про</span> театр</h2>
+      <div class="row p-0 my-0 mx-auto justify-content-evenly">
+        <div
+          class="col-lg-4 col-md-6 col-sm-7 col-10 text-sm-start text-center p-0"
+        >
+          <h3>Кращий театр в області</h3>
+          <p>
+            Всі ці імена загальновідомі, як загальновідомо і те, що марка Театру
+            імені Лесі Українки завжди привертала до себе не тільки
+            професіоналів, але й непересічних глядачів сотень міст нинішнього
+            простору СНД, де проходили гастролі театру. Офіційна біографія
+            Національного академічного театру російської драми імені Лесі
+            Українки починається в 1926 році, коли рішенням Київського
+            окрвиконкому була організована в Києві Російська державна драма, і
+            15 жовтня того ж року театр відкрив свій перший сезон. У 1941 році
+            йому було присвоєно ім'я Лесі Українки.
+          </p>
+        </div>
+        <!-- .col -->
+        <div
+          class="about-numbers col-lg-2 col-md-3 col-sm-4 col-10 text-sm-start text-center p-0"
+        >
+          <h3>Трохи про цифри</h3>
+          <div class="d-flex d-sm-block justify-content-between">
+            <div>
+              <img src="img/armchair.png" />
+              <p class="m-0"><span>1600</span> посадочних місць</p>
+            </div>
+            <div>
+              <img src="img/theater.png" />
+              <p class="m-0"><span>350</span> років історії</p>
+            </div>
+          </div>
+        </div>
+        <!-- .about-numbers col-->
+        <div class="col-4 d-none d-lg-block p-0">
+          <img src="img/theatre.png" class="w-100" />
+        </div>
+      </div>
+      <!-- .row -->
+    </div>
+    <!-- .aboutSection -->
+    <div
+      class="projectsSection w-100 m-0 p-0 text-center justify-content-end"
+      id="projects-section"
+    >
+      <h2><span>Наші</span> постановки</h2>
+      <div class="swiper mySecondSwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide position-relative">
+            <img src="img/theatre1.jpg " class="w-100 h-100" />
+            <button
+              class="swiper-moreBtn position-absolute top-50 start-50 text-center border-0 rounded-circle"
+            >
+              <i class="bi bi-search"></i>
+            </button>
+            <div
+              class="swiper-cover position-absolute top-0 left-0 w-100 h-100"
+            >
+              <h3>Лускунчик</h3>
+              <p class="position-absolute bottom-0">Травень 2023</p>
+            </div>
+          </div>
+          <!-- .swiper-slide -->
+          <div class="swiper-slide position-relative">
+            <img src="img/theatre2.png" class="w-100 h-100" />
+            <button
+              class="swiper-moreBtn position-absolute top-50 start-50 text-center border-0 rounded-circle"
+            >
+              <i class="bi bi-search"></i>
+            </button>
+            <div
+              class="swiper-cover position-absolute top-0 left-0 w-100 h-100"
+            >
+              <h3>Лускунчик</h3>
+              <p class="position-absolute bottom-0">Червень 2023</p>
+            </div>
+          </div>
+          <!-- .swiper-slide -->
+          <div class="swiper-slide position-relative">
+            <img src="img/theatre3.jpg" class="w-100 h-100" />
+            <button
+              class="swiper-moreBtn position-absolute top-50 start-50 text-center border-0 rounded-circle"
+            >
+              <i class="bi bi-search"></i>
+            </button>
+            <div
+              class="swiper-cover position-absolute top-0 left-0 w-100 h-100"
+            >
+              <h3>Попелюшка</h3>
+              <p class="position-absolute bottom-0">Липень 2023</p>
+            </div>
+          </div>
+          <!-- .swiper-slide -->
+          <div class="swiper-slide position-relative">
+            <img src="img/theatre4.jpeg" class="w-100 h-100" />
+            <button
+              class="swiper-moreBtn position-absolute top-50 start-50 text-center border-0 rounded-circle"
+            >
+              <i class="bi bi-search"></i>
+            </button>
+            <div
+              class="swiper-cover position-absolute top-0 left-0 w-100 h-100"
+            >
+              <h3>Снігова королева</h3>
+              <p class="position-absolute bottom-0">Серпень 2023</p>
+            </div>
+          </div>
+          <!-- .swiper-slide -->
+        </div>
+        <!-- .swiper-wrapper -->
+      </div>
+      <!-- .swiper .mySecondSwiper -->
+    </div>
+    <!-- .projectsSection -->
+    <div class="ratingSection w-100 p-0" id="rating-section">
+      <div class="row justify-content-evenly align-items-end mx-auto my-0">
+        <div class="col-lg-2 col-4 p-0 text-end">
+          <h2>2018</h2>
+          <h2>2019</h2>
+          <h2>2020</h2>
+        </div>
+        <!-- .col -->
+        <div class="col-lg-5 col-md-5 col-8 p-0 text-start">
+          <span
+            ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+            ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+            ><i class="bi bi-star-fill"></i
+          ></span>
+          <h3 class="m-0">
+            Найкращий театр на думку театральних критиків Парижа
+          </h3>
+        </div>
+        <!-- .col -->
+      </div>
+      <!-- .row -->
+    </div>
+    <!-- ratingSection -->
+    <div
+      class="partnersSection p-0 mx-auto my-0 text-center"
+      id="partners-section"
+    >
+      <h2><span>Партнери</span> театру</h2>
+      <div class="row"></div>
+      <div class="row"></div>
+    </div>
+    <!-- .partnersSection -->
+    <div class="contactsSection text-center p-0" id="contacts-section">
+      <h2><span>Стати</span> меценатом</h2>
+      <div class="row justify-content-between">
+        <div
+          class="col-lg-4 col-12 ps-lg-5 ps-0 pe-0 py-0 m-0 order-lg-0 order-1 z-md-2 z-1"
+        >
+          <div class="row w-100 justify-content-between">
+            <div class="numbers col-lg-12 col-md-6 col-4 text-start p-0">
+              <p>+38 (095) 850-72-35</p>
+              <p>+38 (095) 650-71-79</p>
+            </div>
+            <!-- .numbers .col -->
+            <div
+              class="addresses col-lg-12 col-md-6 col-8 text-lg-start text-end p-0"
+            >
+              <p><u>info@theater.ua</u></p>
+              <p>м. Київ, вул.Богдана Хмельницького 5140</p>
+            </div>
+            <!-- .addresses .col -->
+          </div>
+          <!-- .row -->
+        </div>
+        <!-- .col -->
+        <div class="form col-lg-8 col-12 p-0 order-lg-1 order-0 z-md-2 z-1">
+          <div class="form-container row justify-content-between">
+            <div class="inputs-container col-sm-6 col-12 p-0">
+              <div class="row w-100 justify-content-between">
+                <div class="col-5 p-0">
+                  <input class="w-100" type="text" placeholder="Ім'я" />
+                </div>
+                <!-- .col -->
+                <div class="col-5 p-0">
+                  <input class="w-100" type="text" placeholder="Компанія" />
+                </div>
+                <!-- .col -->
+              </div>
+              <!-- .row -->
+              <div class="row w-100 justify-content-between m-0">
+                <div class="col-5 p-0">
+                  <input class="w-100" type="text" placeholder="Телефон" />
+                </div>
+                <!-- .col -->
+                <div class="col-5 p-0">
+                  <input class="w-100" type="text" placeholder="E-mail" />
+                </div>
+                <!-- .col -->
+              </div>
+              <!-- .row -->
+            </div>
+            <!-- .inputs-container .row -->
+            <div class="col-sm-5 col-12 p-0">
+              <textarea class="w-100" placeholder="Повідомлення"></textarea>
+            </div>
+            <!-- .col -->
+          </div>
+          <!-- .form-container .row -->
+          <div class="row justify-content-between m-0 p-0">
+            <div
+              class="col-lg-7 col-sm-6 col-8 p-0 text-sm-start text-center m-sm-0 mx-auto my-0 order-sm-0 order-1"
+            >
+              <p class="m-0 p-0">
+                * Ваші дані не будуть передані третім особам, 100% ймовірність.
+                Конфіденційність ми гарантуємо та захищаємо персональні дані.
+              </p>
+            </div>
+            <!-- .col -->
+            <div
+              class="col-lg-3 col-sm-5 p-0 m-0 col-12 text-sm-end text-center order-sm-1 order-0"
+            >
+              <button>Надіслати</button>
+            </div>
+            <!-- .col -->
+          </div>
+          <!-- .row -->
+        </div>
+        <!-- .form .col -->
+      </div>
+      <!-- .row -->
+    </div>
+    <!-- .contactsSection -->
+    <footer class="p-0 mx-auto mt-0">
+      <hr class="w-100 m-0" />
+      <div class="row p-0 mx-0 mb-0">
+        <div class="col text-start p-0">
+          <p class="m-0 p-0">
+            &copy; 2022 Національний академічний драматичний театр ім. Лесі
+            Українки
+          </p>
+        </div>
+        <!-- .col -->
+        <div class="col text-end p-0">
+          <p class="m-0 p-0">Розроблено SpaceLab</p>
+        </div>
+        <!-- .col -->
+      </div>
+      <!-- .row -->
+    </footer>
+
+    <!-- Scripts -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
